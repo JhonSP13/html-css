@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em Html5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários disposistivos diferentes ou simplesmente aumente e diminua o tamanho da janela.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="Image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="Image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/stay.mp3" controls autoplay></audio><br> 
+    <!-- ^^^^^^ forma simples com play manual -->
+    <audio preload="auto" autoplay>
+        <source src="midia/dark-lotus.mp3" type="audio/mp3">
+        <source src="midia/dark-lotus.mp3" type="audio/wav">
+        <source src="midia/dark-lotus.mp3" type="audio/ogg">
+        <!-- tipos de midia variaveis para compatibilidada ^^ -->
+        
+    </audio>
+    <a href="midia/dark-lotus.mp3" target="_blank" rel="external">clique aqui e baixa outra midia</a>
+</body>
+</html>
