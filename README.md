@@ -1,2 +1,2 @@
 # html-css
- Curos de HTLM e CSS
+ Cursos de HTLM e CSS
