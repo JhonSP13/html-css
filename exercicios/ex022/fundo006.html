@@ -7,10 +7,18 @@
     <style>
         body {
             height: 97vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-position: top center;
+            background-size: cover;
+            background-attachment: fixed; */
+            
+            /* Shorthands background
+                color > image > position > repeat >  [size] > attachment
+                 */
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+            /* no entano o size não identifica size sendo necessário fazer a parte */
             background-size: cover;
         }
 
